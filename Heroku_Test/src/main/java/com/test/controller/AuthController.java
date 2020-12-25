@@ -21,11 +21,13 @@ public class AuthController {
 	
 	@PostMapping("save")
 	public Auth saveUser(@RequestBody Auth auth) {
+		System.out.println("hello");
 		return authService.saveUser(auth);
 	}
 	
 	@GetMapping("getAll")
 	public List<Auth> getAllUsers(){
+		System.out.println("hello again");
 		return authService.getAllUsers();
 	}
 
